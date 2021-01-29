@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="grid">
+      <div class="first">
+        <img src="logo.webp" /><br /><br />
+        <h1>WIDGET APP</h1>
+        <br />
+        <br />
+        <p>
+          The word widget (pronounced wih-jit) is a tech word that has many
+          definitions depending on the context being used. The dictionary
+          defines a widget as a small mechanical device; a gadget, or a
+          manufactured item that is unnamed, but in the era of Internet and
+          computers this definition doesn’t fit when talking about widgets in
+          relation to software and code. Many widgets are designed to run on
+          your desktop a small application that provides specific information to
+          the user, and can be functional or fun. If you’re using the Windows
+          operating system, you can use a widget engine and then choose widgets
+          to install to your desktop. Popular desktop widget engines include
+          Dashboard, which was released with Mac OS X v10.4, Google Desktop, and
+          SpringWidgets.
+        </p>
+      </div>
+      <br /><br />
+
+      <div class="second">
+        <h1>DIGITAL CLOCK</h1>
+        <br />
+        <div class="jumbotron bg-transparent">
+          <h1 class="display-4" id="thistime"></h1>
+          <p class="lead" id="timeone">
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
+          <hr class="my-4" />
+          <p>This displays the time.</p>
+        </div>
+      </div>
+      <br />
+
+      <div class="fourth">
+        <h1>TO-DO</h1>
+        <br />
+        <br />
+
+        <div class="container my-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Add a note</h5>
+              <div class="form-group">
+                <textarea class="form-control" id="addTxt" rows="3"></textarea>
+              </div>
+              <button class="btn btn-default" id="addBtn">Add Note</button>
+            </div>
+          </div>
+          <hr />
+          <h1>Your Notes</h1>
+          <hr />
+          <div id="notes" class="row container-fluid"></div>
+        </div>
+        <br />
+        <br />
+      </div>
+
+      <div class="fourth">
+        <h1>CALCULATOR</h1>
+        <br />
+        <br />
+
+        <div class="card">
+          <div class="card-body">
+            <input
+              class="form-control"
+              id="screen"
+              type="text"
+              placeholder="Default input"
+            />
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-default">)</button>
+              <button type="button" class="btn btn-default">(</button>
+              <button type="button" class="btn btn-default">C</button>
+              <button type="button" class="btn btn-default">%</button>
+            </div>
+            <br />
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-default">7</button>
+              <button type="button" class="btn btn-default">8</button>
+              <button type="button" class="btn btn-default">9</button>
+              <button type="button" class="btn btn-default">X</button>
+            </div>
+            <br />
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-default">4</button>
+              <button type="button" class="btn btn-default">5</button>
+              <button type="button" class="btn btn-default">6</button>
+              <button type="button" class="btn btn-default">-</button>
+            </div>
+            <br />
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-default">1</button>
+              <button type="button" class="btn btn-default">2</button>
+              <button type="button" class="btn btn-default">3</button>
+              <button type="button" class="btn btn-default">+</button>
+            </div>
+            <br />
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-default">0</button>
+              <button type="button" class="btn btn-default">.</button>
+              <button type="button" class="btn btn-default">=</button>
+              <button type="button" class="btn btn-default">/</button>
+            </div>
+            <br />
+          </div>
+        </div>
+
+        <br />
+        <br />
+      </div>
+
+      <div class="third">
+        <h1>CONTACT US</h1>
+        <br />
+        <br />
+        <div class="gridtwo">
+          <div class="detail">
+            <p>Phone number</p>
+            <br />
+            <h3>+999 123 456 89</h3>
+            <br /><br />
+            <p>Email</p>
+            <br />
+            <h5>Widget@gmail.com</h5>
+            <br /><br />
+            <p>Address</p>
+            <br />
+            <h4>121 Street, 21 Avenue Road, Bangalore</h4>
+            <br /><br />
+          </div>
+          <div class="form">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1 ">Name</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comments</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="fourth">
+        <h1>COMING SOON</h1>
+        <br />
+        <br />
+        <p>New widgets are coming soon...</p>
+        <br />
+        ... <br />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
